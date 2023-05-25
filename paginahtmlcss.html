@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <p> Instruções: Codificar um documento em HTML para apresentar os dados do seu currículo. Para tanto, utilize
+            CSS para realizar a customização dos elementos através de classes de estilos. Para o
+            posicionamento dos elementos utilize os recursos de boxmodel e flutuação. Observação: elementos
+            HTML que deverão ser utilizados obrigatoriamente: div, labels, ul, ol, span, p e a.</p>
+        <title> Currículo vitae </title> 
+
+        <link rel="stylesheet" type="text/css" href="css/estilos.css"/>      
+        <style>
+            
+            .boxmodel_grande
+             {
+                float: left;
+                margin: 20px;
+                width: 1200px;
+                height: 250px;
+                border: 1px;
+                border-style: solid;
+                border-color: black;                
+                background: rgb(194, 135, 135);
+                text-indent: 10px;
+                margin-bottom: 15px;             
+            }
+            .boxmodel_grande2
+            {
+                float: left;
+                margin: 20px;
+                width: 500px;
+                height: 150px;
+                border: 1px;
+                border-style: solid;
+                border-color: black;                
+                background: rgb(255, 255, 255);
+                text-indent: 10px;
+                margin-bottom: 25px;
+            }
+            .boxmodel_pequena_1
+            {
+                float: left;
+                width: 300px;
+                height: 150px;
+                border: 1px;
+                border-style: solid;
+                border-color: black;
+                background: rgb(238, 69, 69);
+                margin: 10px; 
+                text-indent: 10px;
+            
+            }
+            .boxmodel_pequena-2
+            {
+                float: left;
+                width: 300px;
+                height: 120px;
+                border: 1px;
+                border-style: solid;
+                border-color: black; 
+                background: rgb(238, 69, 69);
+                margin: 10px; 
+                text-indent: 10px;
+            }
+            .boxmodel_pequena-3
+            {
+                float: left;
+                width: 500px;
+                height: 120px;
+                border: 1px;
+                border-style: solid;
+                border-color: black; 
+                background: rgb(238, 69, 69);
+                margin: 10px; 
+                text-indent: 10px;
+            }
+
+            .sublinhado
+            {
+                background-color: yellowgreen;
+            }
+            .whats
+            {
+                float: right;
+                margin-right: 10px;
+            }
+        </style>
+        </head> 
+        <body>
+        <p> Currículo Vitae</p>
+        <br>
+        <div class="boxmodel_grande">   
+            <p>Dados:</p>                  
+            <div class="boxmodel_pequena_1">
+                  
+                <h4>Dados cadastrais:</h4>
+                <label>Nome:<label>
+                <br>
+                <input type="text" name="nome" size="15">   
+                <br>
+                <label>RG:<label>
+                <br>
+                <input type="text" name="rg" maxlength="10" size="15">
+            </div>
+        
+            <div class="boxmodel_pequena_1">     
+                <h4>Endereço:</h4>             
+                <label>Logradouro:<label>
+                <br>
+                <input type="text" name="endereco" size="15">
+                <br>
+                <label>CNH:<label>
+                <br>
+                <input type="checkbox" name="cnh" size="15">
+            </div>
+        </div>
+        <div class="boxmodel_grande">
+            <p>Formação: </p>
+            <div class="boxmodel_pequena-2">
+                <h4> Ensino Fundamental: </h4>
+                <label>Escola E.F.:</label>
+                <br>
+                <input type="text" name="ef" size="15">
+            
+            </div>
+            <div class="boxmodel_pequena-2">
+                <h4> Ensino Médio: </h4>
+                <label>Escola E.M.:</label>
+                <br>
+                <input type="text" name="em" size="15">
+            </div>
+            <div class="boxmodel_pequena-2">
+                <h4> Ensino Superior: </h4>
+                <label>Instituição:</label>
+                <br>
+                <input type="text" name="Instituicao" size="15">
+            </div>
+        
+        </div>
+        <div class="boxmodel_grande">
+            <p>Experiência: </p>
+            <div class="boxmodel_pequena-3">
+                <h4> Experiência profissional: </h4>
+                <label> Nome:</label>
+                <br>
+                <input type="text" name="exp" size="25">
+            </div>
+            <div class="boxmodel_pequena-3">
+                <h4> Trabalho voluntário: </h4>
+                <label> Instituição: </label>
+                <br>
+                <input type="text" name="volunt" size="25">
+            </div>
+        </div>
+
+        <div class="boxmodel_grande2">
+            <p> <span class="sublinhado">Inspirações:</span> </p>
+            <ol>
+                <li> Mahatma Ghandi</li>
+                <li> Peter Diamandis</li>
+                <li> Liz Murray</li>
+                <li> Madre Teresa de Calcutá</li>
+                <li> Mark Zuckerberg</li>
+            </ol>
+        </div>
+
+        <div class="boxmodel_grande2">
+            <ul>
+                <br>
+                <li> <span class="sublinhado"> Disciplina</span>: Construção de Páginas Web </li>
+                <br>
+                <li> <span class="sublinhado">Curso</span>:BCC</li>
+                <br>
+                <li><span class="sublinhado">IFSUL</span> - Câmpus Passo Fundo</li>
+            </ul>
+        </div>
+        <div class="whats">
+            <h2> Contato via <a href=https://api.whatsapp.com/send?phone=5554996123174&text=Ol%C3%A1,%20estou%20interessado(a)%20nos%20seus%20servi%C3%A7os!!>WhatsApp</a></h2>
+        </div>
+        </div>
+    </body>
+    
+    
+
+</html>
